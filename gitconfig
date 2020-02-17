@@ -1,0 +1,10 @@
+[http]
+	sslVerify = false
+[push]
+	default = current
+[diff]
+	tool = meld
+[merge]
+	tool = meld
+[difftool]
+	prompt = false

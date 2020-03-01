@@ -11,3 +11,7 @@ augroup END
 highlight ColorColumn ctermbg=0 guibg=lightgrey
 autocmd BufNewFile,BufRead Jenkinsfile set syntax=groovy
 autocmd BufNewFile,BufRead Jenkinsfile set colorcolumn=100
+
+" Turn off terminal bell sound in vim
+set noerrorbells visualbell t_vb=
+autocmd GUIEnter * set visualbell t_vb=

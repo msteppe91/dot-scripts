@@ -1,5 +1,6 @@
-[http]
-	sslVerify = false
+[user]
+	name = Michael Steppe
+	email = msteppe91@gmail.com
 [push]
 	default = current
 [diff]

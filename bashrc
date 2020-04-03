@@ -1,4 +1,5 @@
 # .bashrc
+# APPEND THIS FILE TO THE BOTTOM OF ANY EXISTING ~/.BASHRC ON A SYSTEM 
 
 ################################################################################
 # Steppe added customizations

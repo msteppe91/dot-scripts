@@ -36,8 +36,5 @@
     untracked = cyan
 
 # Set email differently based on repo location on filesystem
-#[includeIf "gitdir:~/git/J17359/"]
-#    [user]
-#		email = "J17359@users.noreply.github.com"
-#	[core]
-#        sshCommand = "ssh -i ~/.ssh/work_key"
+[includeIf "gitdir:~/git/J17359/"]
+    path = ~/.gitconfig-work

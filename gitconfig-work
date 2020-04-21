@@ -1,0 +1,4 @@
+[user]
+    email = "J17359@users.noreply.github.com"
+[core]
+    sshCommand = "ssh -i ~/.ssh/work_key"

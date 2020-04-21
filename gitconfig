@@ -1,11 +1,36 @@
 [user]
-	name = Michael Steppe
-	email = msteppe91@gmail.com
+    name = Michael Steppe
+    email = msteppe91@users.noreply.github.com
 [push]
-	default = current
+    default = simple
 [diff]
-	tool = meld
+    tool = meld
 [merge]
-	tool = meld
+    tool = meld
 [difftool]
-	prompt = false
+    prompt = false
+[core]
+    autocrlf = false
+
+# Prettier log
+[alias]
+    lg = log --graph --oneline
+
+# Colored output settings
+[color]
+    branch = auto
+    diff = auto
+    status = auto
+[color "branch"]
+    current = yellow reverse
+    local = yellow
+    remote = green
+[color "diff"]
+    meta = yellow bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
+[color "status"]
+    added = yellow
+    changed = green
+    untracked = cyan

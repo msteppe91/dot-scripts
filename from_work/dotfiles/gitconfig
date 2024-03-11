@@ -1,0 +1,58 @@
+[http]
+    sslVerify = false
+[user]
+    name = Michael Steppe
+    email = "msteppe91@users.noreply.github.com
+[push]
+    default = current
+[diff]
+    tool = meld
+[merge]
+    tool = meld
+[difftool]
+    prompt = false
+[mergetool]
+    prompt = false
+
+[core]
+	autocrlf = false
+    editor = vim
+
+# Prettier log
+[alias]
+    lg = log --graph --oneline --decorate
+	pushf = push --force-with-lease
+
+# Colored output settings
+[color]
+    branch = auto
+    diff = auto
+    status = auto
+[color "branch"]
+    current = yellow reverse
+    local = yellow
+    remote = green
+[color "diff"]
+    meta = yellow bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
+[color "status"]
+    added = yellow
+    changed = green
+    untracked = cyan
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge --skip -- %f
+	process = git-lfs filter-process --skip
+	required = true
+
+# Set email differently based on repo location of filesystem
+[includeIf "gitdir:~/git/msteppe91/"]
+    path = ~/.gitconfig-msteppe91
+
+# Newer git versions throw stupid warning about how we want to handle pulls
+[pull]
+	rebase = true
+[maintenance]
+	repo = /home/entds.ngisn.com/4j17359/git/ted/builder-automation

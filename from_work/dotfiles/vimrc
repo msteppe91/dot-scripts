@@ -1,0 +1,31 @@
+" This is a comment in vim config files. No closing quote!
+
+" Set tab spacing to 4 spaces and expand tab to spaces
+set tabstop=4
+set expandtab
+
+" Show colored bar in 'colorcolumn'
+set colorcolumn=100
+highlight ColorColumn ctermbg=0 guibg=lightgrey
+
+" Turn on line numbers
+"set number
+
+" Make colorcolumn larger for python files
+autocmd FileType python set colorcolumn=100
+
+" Set all Jenkinsfile syntax highlighting to groovy
+autocmd BufNewFile,BufRead Jenkinsfile set syntax=groovy
+autocmd BufNewFile,BufRead Jenkinsfile set colorcolumn=100
+
+" Disable terminal bell in vim
+set noerrorbells visualbell t_vb=
+autocmd GUIEnter * set visualbell t_vb=
+
+" Enable mouse
+"set mouse=a
+
+" Add filepath to status line
+set statusline+=%F
+
+syntax on
